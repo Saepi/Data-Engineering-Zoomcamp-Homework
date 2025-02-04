@@ -1,0 +1,21 @@
+services:
+  postgres-db:
+    container_name: postgres-db
+    hostname: db
+    image: postgres
+    environment:
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "user"
+      POSTGRES_DB: "ny_green_taxi"
+    volumes:
+      - "./data:/var/lib/postgresql/data"
+    ports:
+      - "5433:5432"
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "user"
+    ports:
+      - "8080:80"
