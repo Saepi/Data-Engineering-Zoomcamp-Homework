@@ -1,0 +1,10 @@
+Q1
+
+wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2020-12.csv.gz
+gunzip -l yellow_tripdata_2020-12.csv.gz
+
+As I entered the course quite lately I didn't have time to understand the work with gcc.
+So, everthing is performed in storage-saving way.
+Q3 is not done.
+Q4 answered by downlodaing only 2020 year data and checking the amount of rows.
+Q5 is done by downloading one table and cheking the amount of rows in table.
